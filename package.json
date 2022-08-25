@@ -4,9 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "develop": "concurrently \"cd client && npm start\"",
+    "install": "cd client && npm i",
+    "build": "cd client && npm run build"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^7.3.0"
+  }
 }
